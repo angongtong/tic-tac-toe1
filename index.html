@@ -7,43 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-   
-        .box-container {
+        body {
+            margin: 0 auto;
+            max-width: fit-content;
             display: grid;
-            grid-template-columns: auto auto auto;
-            padding: 10px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
         }
 
-        .box-item {
+        .box-item1 {
+            display: inline-flex;
             border: 1px solid black;
-            padding: 20px;
             font-size: 30px;
+            text-align: center;
             width: 200px;
             height: 200px;
-            text-align: center;
+            background-color: antiquewhite;
+
+
         }
-        
-    </style> 
+        .box-item2 {
+            display: inline-flex;
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+        .box-item3 {
+            display: inline-flex;
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-    <article class="box-container"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
-    <article class="box-item"></article>
+<div class="box-item1"></div>
+<div class="box-item1"></div>
+<div class="box-item1"></div>
+<div class="box-item2"></div>
+<div class="box-item2"></div>
+<div class="box-item2"></div>
+<div class="box-item3"></div>
+<div class="box-item3"></div>
+<div class="box-item3"></div>
 </body>
 <script>
-    var article = document.querySelector("box-container");
-    var player1 = document.querySelector()
-    var player2 = document.querySelector()
-    body.addEventListener("click", function(event) {
-        var article = event.target
-    })
 
 </script>
 </html>
