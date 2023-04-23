@@ -31,6 +31,8 @@ Cool things I would add if I can keep working on this
 
 Notes
 For my game I’ve decided to choose 9 article tags as my grid layout.
+Update: I ended up switching to div tags as they were more familiar, and I could actually grasp how to make a grid with them. There was a lot of overthinking, until I finally established the grid.
+Now I want to set up the conditions for 'X' and 'O' to alternate when a box is clicked
 Var for player 1 and 2. 
 Use of statement to set Conditions for the amount of turns each player can have in total, on the basis that, another condition being player 1 or 2 hasn’t already got 3 knots or crosses in a row, either diagonally or horizontally;
 Add at most (hopefully) one or two event listeners for this purpose.
