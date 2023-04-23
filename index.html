@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -27,7 +27,11 @@
 
 
         }
-
+        #restartGame {
+            display: flex;
+            font-size: small;
+            text-align: left;
+        }
 
     </style>
 </head>
@@ -41,6 +45,10 @@
 <div class="box-item"></div>
 <div class="box-item"></div>
 <div class="box-item"></div>
+<div class="winning-message" id="winningMessage">
+<div id="winningMessageText"></div>
+<button id="restartGame">Restart</button>
+</div>
 </body>
 <script>
 
@@ -59,7 +67,8 @@ body.addEventListener("click", function(click) {
 // document.querySelectorAll("div")[1].textContent = 'X'
 // after playing around with the code in console I was able to accomplish getting the textContent "X" to appear in the boxes
 // this means the addEventListener() is functional, as well as the code so far.
-// I will need to elaborate on the if statement 
+// I will need to elaborate on the if statement to include players for the X/O characters
+
 
 </script>
 </html>

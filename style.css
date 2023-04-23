@@ -4,3 +4,8 @@ body {
 .box-item {
     text-align: center;
 }
+
+#restartGame {
+    width: 60px;
+    height: 25px;
+}
