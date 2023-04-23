@@ -62,11 +62,14 @@
 <script>
 
     var body = document.querySelector("body");
-    var div = document.querySelector("div");
-    body.addEventListener("click", function(event) {
-        var div = event.target
-        if (event.target.classList.contains("box-item1", "box-item2", "box-item3")) {
-            event.target.textContent= "X";
+    var div = document.querySelector("box-item1");
+    var div2 = document.querySelector("box-item2")
+    var div3 = document.querySelector("box-item3")
+    body.addEventListener("click", function(click) {
+        var click = event.target
+        
+        if (click.classList.contains("box-item1", "box-item2", "box-item3")) {
+            event.target.textContent = "X"
         }
         console.log(div)
     })    
