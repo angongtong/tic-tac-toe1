@@ -18,12 +18,12 @@
 
         .box-item {
             display: inline-flex;
-            border: 1px solid black;
+            border: 1px solid white;
             font-size: 30px;
             text-align: center;
             width: 200px;
             height: 200px;
-            background-color: antiquewhite;
+            background-color: grey;
 
 
         }
@@ -49,7 +49,7 @@
 
     body.addEventListener("click", function(click) {
         var click = event.target
-        
+        var player1 = event.target
         if (click .classList.contains("box-item")) {
             event.target.textContent = "X"
         }
