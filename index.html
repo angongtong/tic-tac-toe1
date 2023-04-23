@@ -45,6 +45,7 @@
             height: 200px;
             background-color: antiquewhite;
         }
+
     </style>
 </head>
 <body>
@@ -60,17 +61,16 @@
 </body>
 <script>
 
-var div = document.querySelector("div");
-var classList = document.querySelector()
-div.addEventListener("click", function(event) {
-    var div = event.target
-    console.log(div)
-})
-if (event.target.classList.contains('box')) {
-        div.style.backgroundColor = "X";
-        var div = document.querySelector('div');
-        console.log()
-}  
+    var body = document.querySelector("body");
+    var div = document.querySelector("div");
+    body.addEventListener("click", function(event) {
+        var div = event.target
+        if (event.target.classList.contains("box-item1", "box-item2", "box-item3")) {
+            event.target.textContent= "X";
+        }
+        console.log(div)
+    })    
+    
 // document.querySelectorAll("div")[1].textContent = 'X'
 
 </script>
