@@ -16,7 +16,7 @@
             grid-gap: 10px;
         }
 
-        .box-item1 {
+        .box-item {
             display: inline-flex;
             border: 1px solid black;
             font-size: 30px;
@@ -27,51 +27,33 @@
 
 
         }
-        .box-item2 {
-            display: inline-flex;
-            border: 1px solid black;
-            font-size: 30px;
-            text-align: center;
-            width: 200px;
-            height: 200px;
-            background-color: antiquewhite;
-        }
-        .box-item3 {
-            display: inline-flex;
-            border: 1px solid black;
-            font-size: 30px;
-            text-align: center;
-            width: 200px;
-            height: 200px;
-            background-color: antiquewhite;
-        }
+
 
     </style>
 </head>
 <body>
-<div class="box-item1"></div>
-<div class="box-item1"></div>
-<div class="box-item1"></div>
-<div class="box-item2"></div>
-<div class="box-item2"></div>
-<div class="box-item2"></div>
-<div class="box-item3"></div>
-<div class="box-item3"></div>
-<div class="box-item3"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
+<div class="box-item"></div>
 </body>
 <script>
 
     var body = document.querySelector("body");
-    var div = document.querySelector("box-item1");
-    var div2 = document.querySelector("box-item2")
-    var div3 = document.querySelector("box-item3")
+    var div = document.querySelector("box-item");
+
     body.addEventListener("click", function(click) {
         var click = event.target
         
-        if (click.classList.contains("box-item1", "box-item2", "box-item3")) {
+        if (click .classList.contains("box-item")) {
             event.target.textContent = "X"
         }
-        console.log(div)
+        console.log(click)
     })    
     
 // document.querySelectorAll("div")[1].textContent = 'X'
