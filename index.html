@@ -44,19 +44,22 @@
 </body>
 <script>
 
-    var body = document.querySelector("body");
-    var div = document.querySelector("box-item");
+var body = document.querySelector("body");
+var div = document.querySelector("box-item");
 
-    body.addEventListener("click", function(click) {
-        var click = event.target
-        var player1 = event.target
-        if (click .classList.contains("box-item")) {
-            event.target.textContent = "X"
-        }
-        console.log(click)
-    })    
-    
+body.addEventListener("click", function(click) {
+    var click = event.target
+    var player1 = event.target
+    if (click .classList.contains("box-item")) {
+        event.target.textContent = "X"
+    }
+    console.log(click)
+})   
+
 // document.querySelectorAll("div")[1].textContent = 'X'
+// after playing around with the code in console I was able to accomplish getting the textContent "X" to appear in the boxes
+// this means the addEventListener() is functional, as well as the code so far.
+// I will need to elaborate on the if statement 
 
 </script>
 </html>
